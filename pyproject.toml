@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "openai-whisper-realtime"
+version = "0.1.0"
+description = ""
+authors = ["Tobias Huttinger <49185519+tobiashuttinger@users.noreply.github.com>", "Amar Sood (tekacs) <pkg@tekacs.com>"]
+readme = "README.md"
+packages = [{include = "openai_whisper_realtime"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sounddevice = "^0.4.5"
+asyncio = "^3.4.3"
+numpy = "^1.23.3"
+whisper = {git = "https://github.com/openai/whisper.git"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
